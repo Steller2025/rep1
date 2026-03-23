@@ -10,6 +10,7 @@ const int MAX_ITEMS = 100;
 //1234....
 /* ================= BASE CLASS ================= */
 //dcfvgbhnjfcvgbhjnk
+//123fctvghbjnk
 class Item {
 protected:
     int id;
