@@ -23,11 +23,11 @@ school(){
 
 student students[3];
 
-void active(string cname, int cage ){
-    for (int i=0; i<3;i++){
-    students[i].student_adder(cname,cage);
+void active(int index,string cname, int cage ){
+    
+    students[index].student_adder(cname,cage);
 }
-}
+
 
 void printer(int i){
    
@@ -49,7 +49,7 @@ int main(){
 school c1;
 
  for (int i=0; i<3;i++){
-c1.active(cname[i],cage[i]);
+c1.active(i,cname[i],cage[i]);
  }
  cout<<"enter student 0,1 or 2 you want info of";
  int choice;
