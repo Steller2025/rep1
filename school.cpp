@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//comment
 class student{
 public:
 string name;
