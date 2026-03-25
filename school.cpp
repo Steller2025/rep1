@@ -40,27 +40,29 @@ cout<<students[i].age;
 
 
 int main(){
-    string cname[3];
+   
+school schools[3];
+for (int j=0; j<3;j++){
+
+     string cname[3];
     int cage[3];
      for (int i=0; i<3;i++){
   cin>>cname[i]>>cage[i];
      }
      
-school c1;
-
  for (int i=0; i<3;i++){
-c1.active(i,cname[i],cage[i]);
+schools[j].active(i,cname[i],cage[i]);
  }
- cout<<"enter student 0,1 or 2 you want info of";
- int choice;
- cin>>choice;
-c1.printer(choice);
+}
+int schoice;
+ cout<<"enter school 0,1 or 2 you want info of";
+ cin>>schoice;
+ 
+ int stchoice; 
+ cout<<"enter student 0,1 or 2 you want info of"<<endl;
+ cin>>stchoice;
 
-school c2;
-
-school c3;
-
-
+schools[schoice].printer(stchoice);
 
 
     
